@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-11T09:50:00Z",
+  "_captured_run_id": "r_61f0d2a9777e4788b6e86a57d318da7c",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote work.transactions (15 rows, 14 columns).",
+    "NOTE: Wrote work.scored (15 rows, 19 columns).",
+    "NOTE: PROC PRINT completed: 15 observations printed, 5 variables",
+    "NOTE: PROC FREQ statement used.",
+    "NOTE: PROC MEANS statement used."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

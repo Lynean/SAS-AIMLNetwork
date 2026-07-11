@@ -1,0 +1,16 @@
+{
+  "_captured_at": "2026-07-11T09:45:00Z",
+  "_captured_run_id": "r_dfd1e73ad01b4f438978c51f82a1dd86",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Imported 20 rows from",
+    "NOTE: PROC PRINT completed: 5 observations printed, 14 variables",
+    "NOTE: PROC CONTENTS completed: 20 observations, 14 variables",
+    "NOTE: PROC SQL statement used.",
+    "NOTE: PROC MEANS statement used.",
+    "SUCCESS: Data imported successfully!"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

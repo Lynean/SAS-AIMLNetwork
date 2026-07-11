@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_network_edges",
+  "source_file": "NETWORK_ANALYSIS_EXECUTABLE_CODE.sas",
+  "source_blob_sha": "4647bc7b073fe3a001466e4c234ed50115dd17d2",
+  "source_commit": "d38c3015dc4e00cb3b3bef65d60d7eee42dec3a3",
+  "notes": "Steps 1-2 of the network analysis script: builds the 10-account/10-transaction sample data (already inline DATALINES in the author's script, no substitution needed) and detects shared-attribute edges (address, phone) via PROC SORT + PROC SQL self-joins, exactly as authored. Stops before Step 3's iterative component-propagation macro, which trips a genuine Jenner PROC SQL bug (multi-argument scalar MIN() mishandled under GROUP BY -- filed separately as a regression test, not shipped here since it does not run)."
+}

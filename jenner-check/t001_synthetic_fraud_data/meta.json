@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_synthetic_fraud_data",
+  "source_file": "SYNTHETIC_FRAUD_DATA.sas",
+  "source_blob_sha": "aa11ef354beae374657635f5614e75e35b3cdbb9",
+  "source_commit": "d38c3015dc4e00cb3b3bef65d60d7eee42dec3a3",
+  "notes": "Synthetic fraud transaction generator (seeded RNG via streaminit(12345)) plus PROC FREQ/MEANS/SQL summary reports. Only edit: the hardcoded PROC EXPORT path (D:\\Works\\...) rewritten to ./fraud_training_data_out.csv, and the DO loop bound reduced 2000->50 for a fast captured run. All generation and reporting logic unchanged from the author's script."
+}

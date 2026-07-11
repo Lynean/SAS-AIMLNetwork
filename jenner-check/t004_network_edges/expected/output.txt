@@ -1,0 +1,48 @@
+                                             Accounts and Their Attributes                                              
+
+  Obs  account_id  address  phone_number  email   device_id
+    1  ACC001      "123     Main          St"    "555-1234"
+    2  ACC002      "123     Main          St"    "555-1234"
+    3  ACC003      "456     Oak           Ave"   "555-5678"
+    4  ACC004      "789     Elm           Rd"    "555-1234"
+    5  ACC005      "123     Main          St"    "555-9999"
+    6  ACC006      "999     Fraud         Way"   "555-4444"
+    7  ACC007      "999     Fraud         Way"   "555-4444"
+    8  ACC008      "111     Clean         Blvd"  "555-8888"
+    9  ACC009      "999     Fraud         Way"   "555-4444"
+   10  ACC010      "111     Clean         Blvd"  "555-8888"
+
+                                                    Transaction Data                                                    
+
+  Obs  account_id  transaction_id  amount  merchant_country  transaction_date
+    1  ACC001      TXN001            1500  NG                           24076
+    2  ACC002      TXN002            2000  CN                           24077
+    3  ACC003      TXN003             300  US                           24078
+    4  ACC004      TXN004            1800  BR                           24079
+    5  ACC005      TXN005            2500  NG                           24080
+    6  ACC006      TXN006            3000  NG                           24076
+    7  ACC007      TXN007            2800  CN                           24077
+    8  ACC008      TXN008             150  US                           24078
+    9  ACC009      TXN009            3500  NG                           24076
+   10  ACC010      TXN010             200  US                           24080
+
+                                                    Transaction Data                                                    
+
+                                                    Transaction Data                                                    
+
+                                      Network Edges (Accounts Sharing Attributes)                                       
+
+  Obs  from_account  to_account       edge_type  edge_weight  temp
+    1  ACC001        ACC002      SHARED_ADDRESS            1     .
+    2  ACC001        ACC005      SHARED_ADDRESS            1     .
+    3  ACC002        ACC005      SHARED_ADDRESS            1     .
+    4  ACC006        ACC007      SHARED_ADDRESS            1     .
+    5  ACC006        ACC009      SHARED_ADDRESS            1     .
+    6  ACC007        ACC009      SHARED_ADDRESS            1     .
+    7  ACC008        ACC010      SHARED_ADDRESS            1     .
+
+                                      Network Edges (Accounts Sharing Attributes)                                       
+
+total_edges
+-----------
+          7

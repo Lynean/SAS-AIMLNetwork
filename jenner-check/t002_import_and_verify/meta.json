@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_import_and_verify",
+  "source_file": "IMPORT_AND_CONFIGURE_DATA.sas",
+  "source_blob_sha": "d8033e0c031a6de988c6a46b6edca21ecd20b5d5",
+  "source_commit": "d38c3015dc4e00cb3b3bef65d60d7eee42dec3a3",
+  "notes": "PROC IMPORT + verification workflow (PROC PRINT/CONTENTS/SQL/MEANS). Edits: swapped the CAS session + `libname modeldata cas caslib=\"casuser\"` for a plain `libname modeldata \"%sysfunc(pathname(work))\"` (Jenner runs Base SAS, not Viya/CAS); the hardcoded D:\\Works\\... csv path is replaced by a small DATA _NULL_ step that writes a 20-row sample of the repo's own fraud_training_data.csv to a WORK file, which PROC IMPORT then reads exactly as the author's script does (the runner sends only script text, not sibling data files, so the CSV is inlined as DATALINES rather than shipped as input/). All PROC IMPORT/PRINT/CONTENTS/SQL/MEANS statements unchanged from the author's script."
+}

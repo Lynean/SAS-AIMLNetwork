@@ -1,0 +1,76 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA accounts_attributes
+
+NOTE: Processing inline DATALINES (10 lines)
+
+NOTE: Read 10 rows from DATALINES.
+NOTE: Wrote accounts_attributes (10 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA accounts_transactions
+
+NOTE: Processing inline DATALINES (10 lines)
+
+NOTE: Read 10 rows from DATALINES.
+NOTE: Wrote accounts_transactions (10 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=accounts_attributes
+
+NOTE: PROC PRINT completed: 10 observations printed, 5 variables
+NOTE: PROC PRINT data=accounts_transactions
+
+NOTE: PROC PRINT completed: 10 observations printed, 5 variables
+NOTE: PROC SORT data=accounts_attributes
+
+NOTE: Read 10 rows from accounts_attributes.
+NOTE: Wrote accounts_attributes (10 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA address_edges
+
+
+NOTE: Read 10 rows from accounts_attributes.
+NOTE: Wrote address_edges (10 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA _address_pairs
+
+
+NOTE: Read 10 rows from accounts_attributes.
+NOTE: Wrote _address_pairs (5 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table address_edges created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table phone_edges created.
+NOTE: PROC SQL statement used.
+NOTE: DATA all_edges
+
+
+NOTE: Read 7 rows from address_edges.
+NOTE: Read 14 rows from phone_edges.
+NOTE: Wrote all_edges (14 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=all_edges
+
+NOTE: 7 duplicate observations were deleted.
+NOTE: Read 14 rows from all_edges.
+NOTE: Wrote all_edges (7 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC PRINT data=all_edges
+
+NOTE: PROC PRINT completed: 7 observations printed, 5 variables
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.

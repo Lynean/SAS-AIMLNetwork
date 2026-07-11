@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_ml_rule_caller",
+  "source_file": "ML_RULE_50094_1.sas",
+  "source_blob_sha": "24b884d5c691a829f3de50cd168cea1228d70224",
+  "source_commit": "d38c3015dc4e00cb3b3bef65d60d7eee42dec3a3",
+  "notes": "ML_RULE_50094_1.sas is a SAS Fraud Decisioning rule-editor fragment (declare/try-catch/pmml.score()/detection.Alert()), not a standalone program in any SAS dialect -- it has no data/proc wrapper and references the rule engine's implicit message-schema variables. This bundle is a DATA-step caller that transcribes the rule's own documented FALLBACK scoring path verbatim: the same logistic-regression coefficients and the same 0.70/0.60/0.40 decision thresholds from the rule's catch branch, applied to 15 rows sampled directly from the repo's own fraud_training_data.csv (inlined via DATALINES since the runner sends only script text, not sibling data files)."
+}
