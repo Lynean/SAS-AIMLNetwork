@@ -1,0 +1,48 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: Library MODELDATA assigned path=/tmp/work/r_dfd1e73ad01b4f438978c51f82a1dd86/work/515fe69a-b07d-4511-9663-d91236df5449.
+NOTE: Fileref FRAUDCSV assigned to /tmp/work/r_dfd1e73ad01b4f438978c51f82a1dd86/work/515fe69a-b07d-4511-9663-d91236df5449/fraud_training_data.csv.
+NOTE: DATA _null_
+
+NOTE: Writing to fileref fraudcsv (/tmp/work/r_dfd1e73ad01b4f438978c51f82a1dd86/work/515fe69a-b07d-4511-9663-d91236df5449/fraud_training_data.csv)
+NOTE: Processing inline DATALINES (21 lines)
+
+NOTE: Read 21 rows from DATALINES.
+NOTE: Wrote _null_ (21 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC IMPORT datafile=/tmp/work/r_dfd1e73ad01b4f438978c51f82a1dd86/work/515fe69a-b07d-4511-9663-d91236df5449/fraud_training_data.csv out=modeldata.fraud_training_data
+
+NOTE: Imported 20 rows from /tmp/work/r_dfd1e73ad01b4f438978c51f82a1dd86/work/515fe69a-b07d-4511-9663-d91236df5449/fraud_training_data.csv.
+NOTE: Option TITLE changed to Import Summary - fraud_training_data.
+NOTE: PROC PRINT data=modeldata.fraud_training_data
+
+NOTE: PROC PRINT completed: 5 observations printed, 14 variables
+NOTE: Option TITLE changed to Table Structure - fraud_training_data.
+NOTE: PROC CONTENTS data=modeldata.fraud_training_data
+
+NOTE: PROC CONTENTS completed: 20 observations, 14 variables
+NOTE: Option TITLE changed to Row Count Verification.
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.
+NOTE: Option TITLE changed to Data Quality Verification.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+================================================================================
+SUCCESS: Data imported successfully!
+================================================================================
+Table: modeldata.fraud_training_data
+Location: casuser (CAS In-Memory Storage)
+Status: Ready for Model Studio
+Next steps:
+1. Go to Model Studio > Data tab
+2. Refresh the data sources
+3. Select: fraud_training_data (from casuser)
+4. Configure data roles:
+- TARGET: target
+- INPUT: All numeric columns except transaction_id
+- REJECTED: transaction_id, merchant_country, cardholder_country
+5. Click 'Run all pipelines' to train models
+================================================================================

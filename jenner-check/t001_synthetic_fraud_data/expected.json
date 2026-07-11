@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-11T09:40:00Z",
+  "_captured_run_id": "r_73539b69e2fd4b1eac48d4a446f57d6b",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote fraud_training_data (50 rows, 15 columns).",
+    "NOTE: PROC EXPORT data=fraud_training_data outfile=./fraud_training_data_out.csv",
+    "NOTE: Exported 50 rows to ./fraud_training_data_out.csv.",
+    "NOTE: PROC FREQ statement used.",
+    "NOTE: PROC MEANS statement used."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

@@ -1,0 +1,30 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA work.transactions
+
+NOTE: Processing inline DATALINES (15 lines)
+
+NOTE: Read 15 rows from DATALINES.
+NOTE: Wrote work.transactions (15 rows, 14 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA work.scored
+
+
+NOTE: Read 15 rows from work.transactions.
+NOTE: Wrote work.scored (15 rows, 19 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Rule 50094.1 Fallback Scoring - Sample Transactions.
+NOTE: PROC PRINT data=work.scored
+
+NOTE: PROC PRINT completed: 15 observations printed, 5 variables
+NOTE: Option TITLE changed to Decision Distribution (Fallback Formula).
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_output_decision.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: Option TITLE changed to Score vs. Actual Fraud Label.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.

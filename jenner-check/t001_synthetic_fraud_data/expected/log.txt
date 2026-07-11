@@ -1,0 +1,26 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA fraud_training_data
+
+
+NOTE: Wrote fraud_training_data (50 rows, 15 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC EXPORT data=fraud_training_data outfile=./fraud_training_data_out.csv
+
+NOTE: Exported 50 rows to ./fraud_training_data_out.csv.
+NOTE: Option TITLE changed to Synthetic Fraud Training Data - Summary Statistics.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_target.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_merchant_country_target.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.

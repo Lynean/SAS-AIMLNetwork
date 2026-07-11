@@ -1,0 +1,66 @@
+                                          Import Summary - fraud_training_data                                          
+
+
+  Obs  transaction_id  target  transaction_amount  merchant_country  cardholder_country  is_foreign  transaction_hour  account_age_days  days_since_last  txn_count_30days  high_risk_amount  high_risk_country  new_account  dormant_reactivation
+-----  --------------  ------  ------------------  ----------------  ------------------  ----------  ----------------  ----------------  ---------------  ----------------  ----------------  -----------------  -----------  --------------------
+    1            1993       0                 135  US                US                           0                23               476               28                14                 0                  0            0                     0
+    2             329       1                 565  US                US                           0                 0               907               45                18                 0                  0            0                     0
+    3             535       1                 113  TH                US                           1                21                27               37                20                 0                  1            1                     0
+    4            1783       0                  47  US                US                           0                 6               259               42                 5                 0                  0            0                     0
+    5            1662       1                3011  NG                US                           1                 1                 6               17                 6                 1                  1            1                     0
+
+... 15 more observations (showing 5 of 20)
+
+                                         Table Structure - fraud_training_data                                          
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: modeldata.fraud_training_data
+Observations:  20
+Variables:     14
+
+Variables (in alphabetical order):
+
+  #  Variable              Type    Len  Format  Label
+---  --------------------  ----  -----  ------  -----
+  1  account_age_days       Num      8          
+  2  cardholder_country    Char    200          
+  3  days_since_last        Num      8          
+  4  dormant_reactivation   Num      8          
+  5  high_risk_amount       Num      8          
+  6  high_risk_country      Num      8          
+  7  is_foreign             Num      8          
+  8  merchant_country      Char    200          
+  9  new_account            Num      8          
+ 10  target                 Num      8          
+ 11  transaction_amount     Num      8          
+ 12  transaction_hour       Num      8          
+ 13  transaction_id         Num      8          
+ 14  txn_count_30days       Num      8          
+
+-------------------------------------------------------------------------------
+
+                                                 Row Count Verification                                                 
+
+total_rows  fraud_count  legitimate_count
+----------  -----------  ----------------
+        20            9                11
+                                               Data Quality Verification                                                
+
+                                                  The MEANS Procedure
+
+ Variable                    N            Mean          Std Dev        Minimum          Maximum
+ ----------------------------------------------------------------------------------------------
+ transaction_amount         20     667.2500000     1113.2849389     33.0000000     3627.0000000
+ transaction_hour           20      11.5500000        8.1141527      0.0000000       23.0000000
+ account_age_days           20     861.8000000      809.4824597      6.0000000     2617.0000000
+ days_since_last            20      39.3000000       25.4022378      4.0000000       84.0000000
+ txn_count_30days           20       8.1500000        6.4991902      1.0000000       20.0000000
+ is_foreign                 20       0.3500000        0.4893605      0.0000000        1.0000000
+ high_risk_amount           20       0.2000000        0.4103913      0.0000000        1.0000000
+ high_risk_country          20       0.3000000        0.4701623      0.0000000        1.0000000
+ new_account                20       0.2500000        0.4442617      0.0000000        1.0000000
+ dormant_reactivation       20       0.1500000        0.3663475      0.0000000        1.0000000
+ ----------------------------------------------------------------------------------------------

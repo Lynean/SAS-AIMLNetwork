@@ -1,0 +1,17 @@
+{
+  "_captured_at": "2026-07-11T09:55:00Z",
+  "_captured_run_id": "r_26af0acaba854b8b90ee3ace5855104c",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote accounts_attributes (10 rows, 5 columns).",
+    "NOTE: Wrote accounts_transactions (10 rows, 5 columns).",
+    "NOTE: Table address_edges created.",
+    "NOTE: Table phone_edges created.",
+    "NOTE: Wrote all_edges (14 rows, 5 columns).",
+    "NOTE: 7 duplicate observations were deleted.",
+    "NOTE: PROC PRINT completed: 7 observations printed, 5 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

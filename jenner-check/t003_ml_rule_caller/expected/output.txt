@@ -1,0 +1,41 @@
+                                  Rule 50094.1 Fallback Scoring - Sample Transactions                                   
+
+
+  Obs  transaction_id  target  output_ml_fraud_score  output_decision  output_risk_level
+-----  --------------  ------  ---------------------  ---------------  -----------------
+    1            1998       0                 0.9797  ALERT            CRITICAL
+    2            1843       1                 0.0224  APPROVE          LOW
+    3            1579       1                  0.256  APPROVE          LOW
+    4            1588       0                 0.0477  APPROVE          LOW
+    5            1845       0                 0.0044  APPROVE          LOW
+    6            1591       0                 0.6487  REVIEW           HIGH
+    7            1840       1                 0.6872  REVIEW           HIGH
+    8             770       0                 0.0017  APPROVE          LOW
+    9            1585       1                 0.0209  APPROVE          LOW
+   10             870       0                  0.009  APPROVE          LOW
+   11            1572       1                 0.0581  APPROVE          LOW
+   12              53       1                 0.0558  APPROVE          LOW
+   13             593       0                 0.0106  APPROVE          LOW
+   14            1582       1                 0.0049  APPROVE          LOW
+   15             563       1                 0.1135  APPROVE          LOW
+
+                                        Decision Distribution (Fallback Formula)                                        
+
+                                                   The FREQ Procedure
+
+output_decision    Frequency    Percent
+----------------------------------------
+ALERT                      1      6.67
+APPROVE                   12     80.00
+REVIEW                     2     13.33
+                                              Score vs. Actual Fraud Label                                              
+
+                                                  The MEANS Procedure
+
+                                       Analysis Variable : output_ml_fraud_score
+
+        target            N Obs           Mean        Std Dev        Minimum        Maximum
+        -----------------------------------------------------------------------------------
+        0                     7      0.2431143      0.4019500      0.0017000      0.9797000
+        1                     8      0.1523500      0.2306605      0.0049000      0.6872000
+        -----------------------------------------------------------------------------------
